@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu:wght@300;400;500&display=swap');
+
+/* font-family: 'Monoton', cursive;
+font-family: 'Ubuntu', sans-serif; */
+
+/* color: #070707, #9d9f9f, #f4f7f8 und #AC8059 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-color: #070707;
+}
+
+header {
+    color: #9d9f9f;
+    border-bottom: 1px solid #9d9f9f;
+}
+
+header p {
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 3vh 0 0 3vw;
+}
+
+header a {
+    color: #9d9f9f;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    padding-left: 2vw;
+}
+
+header a:hover {
+    color: #f4f7f8;
+}
+
+header nav {
+    display: inline-block;
+    padding-left: 20vw;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 2vw;
+    position: relative;
+}
+
+header nav ul li:after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-color: #AC8059;
+    bottom: -10px;
+    left: 52.5%;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform;
+}
+
+header nav ul li:hover:after {
+    transform: scaleX(1);
+}
+
+
+/* ====================================== */
+
+main {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+main h1 {
+    color: #f4f7f8;
+    font-size: 4.5rem;
+    padding: 20vh 70vw 0 10vw;
+}
+
+main a:first-of-type {
+    color: #9d9f9f;
+    font-size: 1.4rem;
+    padding: 10vh 0 0 10vw;
+    text-decoration: none;
+    display: block;
+}
+
+main a:first-of-type:hover {
+    color: #AC8059;
+}
+
+main p {
+    color: #9d9f9f;
+    font-size: 1.4rem;
+    position: absolute;
+    padding: 60vh 10vw 1vh 1vw;
+}
+
+main p:first-of-type {
+    background-image: url('https://www.digsdigs.com/photos/2016/10/dark-alluring-bedroom-with-very-simple-and-minimalist-decor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 10vh;
+    right: 38vw;
+}
+
+main p:nth-of-type(2) {
+    background-image: url('https://i.pinimg.com/originals/cb/a2/12/cba212eed69977e8935c472cccd2a0d6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 10vh;
+    right: 18vw;
+}
+
+main p:nth-of-type(3) {
+    background-image: url('https://i.pinimg.com/736x/46/5d/71/465d7140a2cac9b6ea78feabd5000669--grey-interior-design-dark-grey-interior.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 10vh;
+    color: #070707;
+}
+
+main a:nth-of-type(2),
+main a:nth-of-type(3) {
+    color: #9d9f9f;
+    border: 2px solid #9d9f9f;
+    border-radius: 50%;
+    font-size: 3rem;
+    padding: 0 2.5px;
+    position: absolute;
+}
+
+main a:nth-of-type(2) {
+    top: 75vh;
+    right: 15vw;
+}
+
+main a:nth-of-type(3) {
+    top: 75vh;
+    right: 10vw;
+}
+
+main a:nth-of-type(2):hover,
+main a:nth-of-type(3):hover {
+    color: #AC8059;
+    border-color: #AC8059;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding-left: 2vw;
+}
+
+footer a {
+    display: inline-block;
+    color: #9d9f9f;
+    font-size: 3rem;
+    padding: 0 1vw 3vh 1vw;
+}
+
+footer a:hover {
+    color: #f4f7f8;
+}
